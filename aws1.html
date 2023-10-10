@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="icon" href="images/A.png" type="image/x-icon">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About Me</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="https://ankushmulkar.medium.com/">Blog</a></li>
+				<li><a href="https://www.youtube.com/@AnkushMulkar">Youtube</a></li>
+				<li><a href="Resources.html">Resources</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<ul class="actions stacked"></ul>
+		</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<p><strong>Build a powerful question answering bot with Amazon SageMaker, Amazon OpenSearch Service, Streamlit, and LangChain</strong>
+								<p><strong>Objective:</strong> <br>Build a powerful question answering bot that leverages Amazon SageMaker, Amazon OpenSearch Service, Streamlit, LangChain, and FastAPI to provide users with accurate answers to their questions using a knowledge corpus from SageMaker docs.<br>
+						
+									<strong>AWS Services Used:</strong><br>
+									
+									1. Amazon SageMaker: Host two Language Model Models (LLMs) - gpt-j-6b and flan-t5-xxl, and use SageMaker JumpStart for model hosting.<br>
+									
+									2. Amazon OpenSearch Service: Store embeddings of the enterprise knowledge corpus and perform similarity searches with user questions.<br>
+									
+									3. AWS Lambda: Implement the Retrieval-Augmented Generation (RAG) functionality and expose it as a REST endpoint via Amazon API Gateway.<br>
+									
+									4. Amazon API Gateway: Handle routing all requests to the Lambda function.<br>
+									
+									5. Amazon SageMaker Processing Jobs: Used for large-scale data ingestion into OpenSearch.<br>
+									
+									6. Amazon SageMaker Studio: Host the Streamlit application.<br>
+									
+									7. AWS Identity and Access Management (IAM): Roles and policies for access management.<br>
+									
+									8. AWS CloudFormation: Create the entire solution stack through infrastructure as code.<br>
+									
+									<strong>Open-Source Packages:</strong><br>
+									
+									1. LangChain: Utilized for interfacing with OpenSearch Service and SageMaker.<br>
+									
+									2. FastAPI: Implemented for developing the REST API interface in the Lambda.<br>
+									
+									<strong>Step-by-Step Implementation Plan:</strong><br>
+									
+									<strong>Data Preprocessing:</strong><br>
+									
+									Convert HTML pages from the SageMaker docs into smaller overlapping chunks for better context continuity.<br>
+									Use LangChain to convert these chunks into embeddings.<br>
+									Store the embeddings in Amazon OpenSearch Service.<br>
+									<strong>Model Hosting on SageMaker:</strong><br>
+									
+									Host the gpt-j-6b and flan-t5-xxl models using Amazon SageMaker.<br>
+									Utilize SageMaker JumpStart for efficient model hosting.<br>
+									<strong>Lambda Function Implementation:</strong><br>
+									
+									Implement an AWS Lambda function to handle the RAG functionality.<br>
+									Expose the Lambda function as a REST endpoint using FastAPI and Amazon API Gateway.<br>
+									Configure the Lambda function to perform similarity searches in the OpenSearch Service index for user questions.<br>
+									<strong>Streamlit Application:</strong><br>
+									
+									Develop a Streamlit chatbot application.<br>
+									Configure the application to invoke the Lambda function via the API Gateway for question answering.<br>
+									<strong>IAM Roles and Policies:</strong><br>
+									
+									Define AWS Identity and Access Management (IAM) roles and policies to manage access to AWS services securely.<br>
+									<strong>Large-Scale Data Ingestion:</strong><br>
+									
+									Use Amazon SageMaker Processing jobs for efficient data ingestion into Amazon OpenSearch.<br>
+									<strong>Infrastructure as Code (IaC):</strong><br>
+									
+									Define the entire solution stack using AWS CloudFormation for infrastructure as code to automate deployment and scaling.<br>	
+                                    credit: AWS </p><br>
+
+								<a href="projects.html" class="button large scrolly">know more</a>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Cntact</h2>
+						<p>ankushmulkar@gmail.com</p>
+					</header>
+					<form
+  action="https://formspree.io/f/xqkvlbpw"
+  method="POST"
+>
+  <label>
+    <span style="color: white;">Your email:</span>
+    <input type="email" name="email">
+  </label>
+  <label>
+    <span style="color: white;">Your message:</span>
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+						<div class="col-12">
+							<hr />
+							<h3>Find me on ...</h3>
+							<ul class="social">
+								<li><a href="https://twitter.com/AnkushMulkar" class="icon brands fa-twitter"><span>Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/ankushmulkar/" class="icon brands fa-linkedin-in"><span>LinkedIn</span></a></li>
+								<li><a href="https://ankushmulkar.medium.com/" class="icon brands fa-medium"><span>Medium</span></a></li>
+								<li><a href="https://github.com/AnkushMulkar" class="icon brands fa-github"><span>Github</span></a></li>
+								<li><a href="https://www.youtube.com/@AnkushMulkar" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+							
+							</ul>
+							<hr />
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="https://www.linkedin.com/in/ankushmulkar/">Ankush Mulkar</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
